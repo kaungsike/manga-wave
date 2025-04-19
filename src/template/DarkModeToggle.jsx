@@ -21,23 +21,25 @@ export default function DarkModeToggle() {
   }, [darkMode]);
 
   return (
-    <Button
-      onClick={() => setDarkMode(!darkMode)}
-      className="flex items-center gap-4 shadow-none px-3 py-3 bg-white dark:bg-blue-gray-900 text-black dark:text-white transition-colors duration-300"
-      role="button"
-      tabIndex={0}
-    >
-      {darkMode ? (
-        <>
-          <SunIcon className="h-5 w-5" />
-          <span>Light</span>
-        </>
-      ) : (
-        <>
-          <MoonIcon className="h-5 w-5" />
-            <span>Dark</span>
-        </>
-      )}
-    </Button>
+    <>
+      <Button
+        onClick={() => setDarkMode(!darkMode)}
+        className="flex items-center gap-4 bg-transparent px-[12px] shadow-none active:shadow-none hover:shadow-none active:bg-transparent hover:bg-transparent w-full h-full text-black dark:text-white transition-colors duration-300"
+        role="button"
+        tabIndex={0}
+      >
+        {darkMode ? (
+          <>
+            <SunIcon className="h-5 w-5" />
+            <p className="capitalize font-normal text-[16px]">Light</p>
+          </>
+        ) : (
+          <>
+            <MoonIcon className="h-5 w-5" />
+           <p className="capitalize font-normal text-[16px]">Dark</p>
+          </>
+        )}
+      </Button>
+    </>
   );
 }

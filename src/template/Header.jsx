@@ -43,13 +43,13 @@ const Header = () => {
               src="https://images.vexels.com/media/users/3/324280/isolated/preview/9d52451aee79d0393830d6dca2afe6b7-book-icon-in-red-color.png"
               alt=""
             />
-            <p className="text-sm font-bold">Manhwa</p>
+            <p className="text-sm font-bold dark:text-white">Manhwa</p>
           </div>
           <div className="p-2">
             <Input
               icon={<MagnifyingGlassIcon className="h-5 w-5" />}
-              label="Search"
-              className="w-12 lg:w-96"
+              label="Search "
+              className="w-12 lg:w-96  dark:outline-white dark:border-white dark:placeholder:text-white dark:bg-blue-gray-900 bg-white text-gray-900 dark:text-white"
             />
           </div>
           {/* Drawer Btn */}
@@ -95,7 +95,9 @@ const Header = () => {
               </ListItemPrefix>
               Profile
             </ListItem>
-            <DarkModeToggle/>
+            <ListItem className="dark:text-white p-0 h-[44px] text-black">
+            <DarkModeToggle />
+            </ListItem>
             <ListItem className="dark:text-white text-black">
               <ListItemPrefix>
                 <PowerIcon className="h-5 w-5" />
