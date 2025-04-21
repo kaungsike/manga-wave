@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "../template/Container";
 import CategorySection from "../components/CategorySection";
 import BookSection from "../components/BookSection";
 
